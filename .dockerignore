@@ -1,0 +1,6 @@
+dummy_data.bin
+.git
+.gitignore
+README.md
+Dockerfile
+main.go

@@ -4,7 +4,7 @@ This project demonstrates a simple Go application containerized using Docker, wi
 
 ## Multistage Build Explanation
 
-Multistage builds in Docker allow you to use multiple `FROM` statements in your `Dockerfile`. This technique lets you build your Go application in one stage (using a full Go environment), and then copy only the compiled binary into a minimal image (like `alpine` or `scratch`) for production. This results in smaller, more secure, and efficient containers.
+Multistage builds in Docker allow you to use multiple `FROM` statements in your `Dockerfile`. This technique lets you build your Go application in one stage (using a full Go environment), and then copy only the compiled binary into a minimal image (like `debian:bullseye-slim`) for production. This results in smaller, more secure, and efficient containers. The size of the image is roughly 84MB.
 
 ### Benefits
 
